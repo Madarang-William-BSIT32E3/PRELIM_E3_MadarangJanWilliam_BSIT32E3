@@ -1,0 +1,43 @@
+﻿@{
+    string subject = "ELECTIVE 3";
+    string time = "1:00-4:00";
+    string day = "Saturday";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Schedule</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Time</th>
+            <th>Day</th>
+        </tr>
+        <tr>
+            <td>@subject</td>
+            <td>@time</td>
+            <td>@day</td>
+        </tr>
+    </table>
+</body>
+</html>
